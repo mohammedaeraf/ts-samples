@@ -1,6 +1,5 @@
-
-function printStatusCode(code: string | number) {
-  console.log(`My status code is ${code}.`); // ${}
+function printStatusCode(code: string | number) :void {
+  console.log(`My status code is ${code}.`); 
 }
 
 printStatusCode(404);
