@@ -11,8 +11,5 @@ console.log(`Last element =>` + lastSales); // outputs 'Last element =>3000'
 
 // Initialize a variable to accumulate the total sales
 let totalSales: number = 0;
-
-// Loop through the sales array to calculate the total sales
-for (let i: number = 0; i < sales.length; i++) {
-    totalSales = totalSales + sales[i]; // accumulate the total sales
-}
+const total:number = sales.reduce((totalSales, sale) => totalSales + sale, 0);
+console.log(`Total Sales = ${total}`);
